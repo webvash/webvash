@@ -201,6 +201,8 @@
     #buttonsearch{height: 25px;width: 25px;}
 
     .cvimage{ width: 0px;}
+
+    #buttonsearch{display: none;}
    }
 
 
