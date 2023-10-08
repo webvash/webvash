@@ -45,7 +45,7 @@
   .container{background-color: #ffff;
              width: 80vw;
               display: grid;
-              grid-template-rows:10px 200px 200px 500px minmax(400px,auto) 100px;
+              grid-template-rows:10px 200px 200px 500px minmax(400px,auto) 50px;
              /* grid-template-columns:repeat(12,minmax(8px, 1fr)); */
               grid-template-columns:repeat(12,1fr);
               gap: 10px;
@@ -58,7 +58,7 @@
   .w4{background-color:#F6F5F0; grid-area:4/1/5/13; border-radius: 20px;}
   .Yellow{background-color:#EFFCF6; grid-area:5/1/6/7;border-radius: 20px; display: flex; gap:0px;  flex-direction:column; align-items: center;}
   .black{background-color:#EEF2FE; grid-area:5/7/6/13;border-radius: 20px;display: flex; gap:0px; flex-direction:column; align-items: flex-start;}
-  .w5{background-color:#fff;grid-area:6/1/7/13;display:flex; align-items: center;}
+  .w5{background-color:#fff;grid-area:6/1/7/13; display: flex; justify-content: space-between;}
 
 
   .tech{display: flex; gap:0px; justify-content:center;align-items: center;background-color:#ADD4DC; border-radius: 50%;width: 60px;height:60px;  font-family: 'Bebas Neu e', sans-serif; color: #002D68;}
@@ -140,13 +140,27 @@
 .pardiv{background-color: #1A808B; border-radius:20px 20px 0px 0px;  height: 40px; width: 100%; display: flex; gap:0;align-items: center;justify-content: center; font-weight: bold;font-size: 20px}
 .rightdiv{background-color: #1440AB; border-radius:20px 20px 0px 0px;  height: 40px; width: 100%; display: flex; gap:0;align-items: center;justify-content: center; font-weight: bold;font-size: 20px}
 .color4{color: #E0E7FE;}
-.circle{height: 50px;width: 50px;border-radius:50%; background-color: #1440AB; display: flex; gap:10px;align-items: center;justify-content: center;}
-.circle1{height: 45px;width: 45px;border-radius:50%; background-color: #778DCC;display: flex; gap:0;align-items: center;justify-content: center;}
-.rr24{display: flex;gap:0px;align-items: flex-start;color: #2D2F7E; margin: 20px;}
-.about1{margin-left:10px; font-family: 'Bebas Neu e', sans-serif; font-size: 16px;text-align: left;display: flex;gap:10px;align-items: center;}
-.sizeimg{width:30px;}
+.circle{height: 30px;width: 30px;border-radius:50%; background-color: #1440AB; display: flex; gap:10px;align-items: center;justify-content: center;}
+.circle1{height: 25px;width: 25px;border-radius:50%; background-color: #778DCC;display: flex; gap:0;align-items: center;justify-content: center;}
 
+
+.about1{margin-left:3px; font-family: 'Bebas Neu e', sans-serif; font-size: 13px;text-align: left;display: flex;gap:2px;align-items: center;}
+.sizeimg{width:15px;}
+.logo{order: 1;display: flex;justify-content: center;}
+.logo1{order: 2;}
+.logo2{order: 3;display: flex;}
+
+
+#footer{width: 150px;}
 /*  ......................................................   */
+
+@media  (max-width:1000px)
+{
+ .phide{ display: none;}
+
+}
+
+
     @media  (max-width:800px)
    {
     .cvimage{ width: 250px;}
@@ -206,8 +220,14 @@
 
    }
 
+   @media  (max-width:400px)
+  {
+    #footer{width: 100px;}
 
-    #footer{width: 150px;}
+  }
+
+
+    
 /*//////////////////////////for game/////////////////////////////*/
 
 
