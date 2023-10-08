@@ -185,7 +185,7 @@
 
    .header{display: grid;
               grid-template-rows:50px;
-              grid-template-columns:minmax(100px,1fr) 10fr 0px  50px;
+              grid-template-columns:minmax(100px,1fr) 10fr 150px;
               gap: 0px;
             }
    .title{font-family: 'Bebas Neu e', sans-serif;align-content: center; font-size: 20px;font-weight: bold;}
@@ -195,14 +195,15 @@
 
     .leftheader{order:1;display: flex; align-items: center;}
     .spaceheader{order:2;}
-    .centerheader{order:3;border:0px solid #002D68 ;  border-radius: 40px ; display: flex; align-items: center;justify-content: center;} /* display: none */
-    .rightheader{order:4;border:3px solid #FA483B ;border-radius: 50%;margin: 3px;display: flex; align-items: center;justify-content: center;}
+    .rightheader{order:3;}
     #search p{font-family: 'Bebas Neu e', sans-serif;text-align:center ;opacity: 0; padding: 0;margin: 0; }
     #buttonsearch{height: 25px;width: 25px;}
 
     .cvimage{ width: 0px;}
 
     #buttonsearch{display: none;}
+  
+
    }
 
 
