@@ -23,10 +23,10 @@
   .baner3{background-color:#ffffff; grid-area:1/3/2/4;border-radius: 0% 0% 100% 0%;}
   .baner4{background-color:#Ffffff; grid-area:2/1/3/2;}
   #baner4{background-color:#F6F5F0; border-radius: 100% 0% 0% 0%;width: 100%;height: 100%;}
-  .baner5{ grid-area:2/2/3/3;}
+  .baner5{ grid-area:2/2/3/3;z-index: 1;}
   .baner6{ grid-area:2/3/3/4;}
   .baner7{ grid-area:3/1/4/2;}
-  .baner8{ grid-area:2/2/5/3;display: flex; align-items: center;}
+  .baner8{ grid-area:2/2/5/3;display: flex; align-items: center;z-index: 0;}
   .baner9{ grid-area:3/3/4/4;}
   .baner10{ grid-area:4/1/5/2;}
   .baner11{ grid-area:4/2/5/3;}
@@ -83,7 +83,7 @@
 
 
 .w11{ display: flex; gap:0px; width: 100%;}
-.whitekey{cursor: pointer;flex: 1;background-color: white;border: 1px solid #002D68; border-radius: 0px 0px 10px 10px; box-shadow: 0px 5px 1px lightgray;height:180px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;}
+.whitekey{-webkit-tap-highlight-color: transparent; cursor: pointer;flex: 1;background-color: white;border: 1px solid #002D68; border-radius: 0px 0px 10px 10px; box-shadow: 0px 5px 1px lightgray;height:180px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;}
 .blackkey{cursor: pointer;background-color: #002D68;border: 1px solid #002D68;width:80% ;height:100px; position: relative;left: 50%; border-radius: 0px 0px 10px 10px; box-shadow: 0px 5px 1px lightgray; z-index: 2;color: white;display: flex;flex-direction: column;justify-content: end;align-items: center;}
 .whitekey1{flex: 1;background-color: white;border: 1px solid #002D68; border-radius: 0px 0px 10px 10px; box-shadow: none ;height:190px;}
 .blackkey1{background-color: #002D68;border: 1px solid #002D68;width:80% ;height:110px; position: relative;left: 50%; border-radius: 0px 0px 10px 10px; box-shadow: none; z-index: 2;}
@@ -120,7 +120,7 @@
     .cont{ display: flex;   flex-direction: column;   align-items: flex-start; justify-content: center;font-family: 'Bebas Neu e', sans-serif; font-size: 16px;color: #2D2F7E;width: 100%;}
     .form{margin: 10px;width: 100%;}
     .lab{margin: 0px;}
-    .form1{align-self: flex-end; margin-top: 0px;}
+    .form1{ margin-top: 0px;}
     .sub{background-color:#1440AB; border-radius:10px; margin: 0px; height: 30px; width: 70px; color: #E0E7FE; font-family: 'Bebas Neu e', sans-serif;font-weight: bold;}
     .logo{margin-right: 20px;}
 
@@ -152,6 +152,11 @@
 .logo1{order: 2;}
 .logo2{order: 3;display: flex;}
 
+.hiddencontact{display: flex;justify-content: space-between;gap: 10px; width: 90vw;height: 1px;}
+.hiddenlogo{ position: relative;bottom: 245px; right:10px ;border-radius: 10px; padding: 10px;width: 200px; display: none;}
+.visable{display: block;}
+.display1{background-color:rgba(150, 172, 241, 0.7); border-radius: 10px; padding: 7px;width: 200px; height: 25px;margin: 5px;}   
+
 
 #footer{width: 150px;}
 
@@ -164,7 +169,8 @@
 
 .bodygame{display:flex;
   justify-content: center; flex-direction: column;
-  align-items: center;  width: 100%;
+  align-items: center;  
+  padding-bottom: 25px;
     }
 
 
@@ -174,10 +180,10 @@
 .font1game{ font-size: 35px; color:  #1A808B;}
 .font2game{ font-size: 25px; color: #fff;}
 .containergame{font-family: 'Caveat', cursive;
-height: auto;
+
               max-width: 50%;
               display: grid;
-             grid-template-rows: 50px minmax(10px,180px) ;
+             grid-template-rows: 50px minmax(10px,auto) ;
              grid-template-columns:minmax(10px,180px)  minmax(10px,180px) ;
              gap: 20px;
             
@@ -269,6 +275,7 @@ height: auto;
   @media  (max-width:775px)
    {
 
+
 /* responsive body   */
     .container{background-color: #ffff;
 
@@ -328,6 +335,9 @@ height: auto;
     #buttonsearch{display: none;}
   
     .onlinekeyboard{font-size: 30px;}
+
+
+    .hiddenlogo{bottom: 255px; }
    }
 
    @media  (max-width:400px)
