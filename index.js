@@ -444,3 +444,21 @@ if (p2===6){document.querySelector(".dice12game").classList.add("whitegame");
             document.querySelector(".dice92game").classList.add("whitegame");
            }
 }
+/////////////////////////contact icon/////////////////////
+var num2=document.querySelectorAll(".select").length;
+for (var i = 0; i < num2; i++)
+ {
+   document.querySelectorAll(".select")[i].addEventListener("click",function(){
+
+       document.querySelector(".hiddenlogo").classList.add("visable");
+ console.log(document.querySelector(".hiddenlogo").classList);
+  
+  window.setTimeout(function(){
+       document.querySelector(".hiddenlogo").classList.remove("visable");
+
+   }, 10000);
+
+
+  });
+ }
+
