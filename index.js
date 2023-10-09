@@ -417,26 +417,26 @@ if (p1===6){document.querySelector(".dice1game").classList.add("whitegame");
                         }
 
 
-if (p2===1){document.querySelector(".dice52game").classList.add("whitegame");}
-if (p2===2){document.querySelector(".dice12game").classList.add("whitegame");
+ if (p2===1){document.querySelector(".dice52game").classList.add("whitegame");}
+ if (p2===2){document.querySelector(".dice12game").classList.add("whitegame");
             document.querySelector(".dice92game").classList.add("whitegame");
            }
-if (p2===3){document.querySelector(".dice12game").classList.add("whitegame");
+ if (p2===3){document.querySelector(".dice12game").classList.add("whitegame");
             document.querySelector(".dice52game").classList.add("whitegame");
             document.querySelector(".dice92game").classList.add("whitegame");
            }
-if (p2===4){document.querySelector(".dice12game").classList.add("whitegame");
+ if (p2===4){document.querySelector(".dice12game").classList.add("whitegame");
             document.querySelector(".dice32game").classList.add("whitegame");
             document.querySelector(".dice72game").classList.add("whitegame");
             document.querySelector(".dice92game").classList.add("whitegame");
             }
-if (p2===5){document.querySelector(".dice12game").classList.add("whitegame");
+ if (p2===5){document.querySelector(".dice12game").classList.add("whitegame");
             document.querySelector(".dice32game").classList.add("whitegame");
             document.querySelector(".dice52game").classList.add("whitegame");
             document.querySelector(".dice72game").classList.add("whitegame");
             document.querySelector(".dice92game").classList.add("whitegame");
               }
-if (p2===6){document.querySelector(".dice12game").classList.add("whitegame");
+ if (p2===6){document.querySelector(".dice12game").classList.add("whitegame");
             document.querySelector(".dice32game").classList.add("whitegame");
             document.querySelector(".dice42game").classList.add("whitegame");
             document.querySelector(".dice62game").classList.add("whitegame");
@@ -449,16 +449,16 @@ var num2=document.querySelectorAll(".select").length;
 for (var i = 0; i < num2; i++)
  {
    document.querySelectorAll(".select")[i].addEventListener("click",function(){
-
-       document.querySelector(".hiddenlogo").classList.add("visable");
- console.log(document.querySelector(".hiddenlogo").classList);
-  
-  window.setTimeout(function(){
-       document.querySelector(".hiddenlogo").classList.remove("visable");
-
-   }, 10000);
-
-
+      var show1=document.querySelector(".phide");
+      var show2 = window.getComputedStyle(show1);
+      var ccc = show2.getPropertyValue('display');
+     if (ccc==="none")
+     {
+        document.querySelector(".hiddenlogo").classList.add("visable");
+        window.setTimeout(function(){
+        document.querySelector(".hiddenlogo").classList.remove("visable");
+      
+        }, 10000);
+      }
   });
  }
-
